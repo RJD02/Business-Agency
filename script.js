@@ -56,5 +56,5 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-swiper.update();
+// swiper.update();
 // End of Section 3 Pricing Cards

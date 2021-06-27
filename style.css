@@ -426,8 +426,8 @@ html {
 }
 
 .pricing-card {
-  width: 28rem;
-  height: 45rem;
+  width: 28rem !important;
+  height: 45rem !important;
   background-color: #181b1d;
   border-radius: 1rem;
   box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.7);
@@ -445,6 +445,120 @@ html {
 .pricing-card-heading {
   font-size: 2rem;
   font-weight: 300;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.heading-free {
+  background: linear-gradient(to right, #087285, #08a5d3);
+  border-radius: 1rem 1rem 0 0;
+}
+.heading-basic {
+  background: linear-gradient(to right, #946809, #bdba0e);
+  border-radius: 1rem 1rem 0 0;
+}
+.heading-standard {
+  background: linear-gradient(to right, #a10c14, #e23b3b);
+  border-radius: 1rem 1rem 0 0;
+}
+.heading-premium {
+  background: linear-gradient(to right, #0b7e48, #3be286);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.pricing-card-price {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 7rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.pricing-card-list li {
+  margin-bottom: .5rem;
+}
+
+.list-free li {
+  color: #0da5d3;
+}
+.list-basic li {
+  color: #bdba0e;
+}
+.list-standard li {
+  color: #e23b3b;
+}
+.list-premium li {
+  color: #3be286;
+}
+
+.pricing-card-list i {
+  font-size: 1.8rem;
+  width: 3rem;
+}
+
+.pricing-card-list span {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.pricing-card-btn {
+  width: 18rem;
+  height: 5rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  border: 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: .3rem .3rem .6rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-free {
+  background-color: #0da5d3;
+}
+.btn-basic {
+  background-color: #bdba0e;
+}
+.btn-standard {
+  background-color: #e23b3b;
+}
+.btn-premium {
+  background-color: #3be286;
+}
+
+.pricing-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  border-radius: 1rem;
+}
+
+.back-free {
+  background-color: #0da5d3;
+}
+.back-basic {
+  background-color: #bdba0e;
+}
+.back-standard {
+  background-color: #e23b3b;
+}
+.back-premium {
+  background-color: #3be286;
+}
+
+.pricing-card-back a {
+  font-size: 2.5rem;
   color: #fff;
 }
 /* End of Section 3 */

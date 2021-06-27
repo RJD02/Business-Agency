@@ -32,25 +32,29 @@ btn.addEventListener("click", () => {
 video.addEventListener("timeupdate", () => {
   const barWidth = video.currentTime / video.duration;
   bar.style.width = `${barWidth * 100}%`;
-  if(video.ended) {
-    btn.className = 'far fa-play-circle';
-    video.style.opacity = '.3';
+  if (video.ended) {
+    btn.className = "far fa-play-circle";
+    video.style.opacity = ".3";
   }
 });
 // End of Section 2 Video
 
 // Section 3 Pricing Cards
 var swiper = new Swiper(".mySwiper", {
+  observer: true,
+  observeParents: true,
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
-    rotate: 50,
+    rotate: 70,
     stretch: 0,
     depth: 100,
     modifier: 1,
     slideShadows: true,
   },
 });
+
+swiper.update();
 // End of Section 3 Pricing Cards

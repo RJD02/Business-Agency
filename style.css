@@ -122,6 +122,7 @@ html {
 .nav-link {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 4rem;
+  font-weight: 900;
   letter-spacing: 0.3rem;
   color: #fff;
   margin: 2rem 0;
